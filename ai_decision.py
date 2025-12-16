@@ -1,7 +1,13 @@
+def load_rules():
+    with open("rules.txt", "r") as f:
+        return [line.strip().lower() for line in f if line.strip()]
+
+
 def ai_decision(text: str) -> bool:
-    keywords = ["urgent", "important", "asap", "critical"]
+    rules = load_rules()
     t = text.lower()
-    return any(k in t for k in keywords)
+    return any(rule in t for rule in rules)
+
 
 
 def main():
