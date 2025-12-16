@@ -1,8 +1,4 @@
 def ai_decision(text: str) -> bool:
-    """
-    Simple AI-style decision (rule-based for now):
-    returns True if the message looks important.
-    """
     keywords = ["urgent", "important", "asap", "critical"]
     t = text.lower()
     return any(k in t for k in keywords)
