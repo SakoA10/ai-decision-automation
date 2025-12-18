@@ -13,3 +13,9 @@ then the automation keeps only those items.
 
 Shows the core AI automation pattern:
 input → decision → action → output
+
+## n8n Workflow
+
+The n8n workflow (`n8n/decision_workflow.json`) implements the automation flow:
+Manual Trigger → HTTP Request to backend → IF/ELSE routing → actions.
+Import the JSON into n8n to load the workflow.
