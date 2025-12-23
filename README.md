@@ -1,3 +1,13 @@
+## What this project does
+
+A hybrid decision engine that classifies messages as URGENT or NORMAL.
+Rules are checked first; if unclear, a fallback logic decides.
+The result is consumed by an n8n workflow for automated routing.
+
+## Architecture
+
+Input → FastAPI (/decide) → Decision Engine → n8n Switch → Actions
+
 # AI Decision Automation
 
 A simple Python automation project where an AI-style decision decides what is important,
