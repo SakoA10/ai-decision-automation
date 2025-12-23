@@ -19,3 +19,10 @@ input → decision → action → output
 The n8n workflow (`n8n/decision_workflow.json`) implements the automation flow:
 Manual Trigger → HTTP Request to backend → IF/ELSE routing → actions.
 Import the JSON into n8n to load the workflow.
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
