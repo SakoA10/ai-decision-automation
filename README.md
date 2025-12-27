@@ -36,3 +36,15 @@ Import the JSON into n8n to load the workflow.
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
+
+## 🚀 Demo Flow
+
+This project demonstrates a real AI automation workflow:
+Input → AI Decision → Conditional Routing → Action
+
+Built with:
+
+- Python
+- FastAPI
+- n8n
+- Rule-based + AI-style decisions
